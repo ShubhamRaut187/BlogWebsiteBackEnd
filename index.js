@@ -158,7 +158,7 @@ app.delete("/blogs/:id",async(req,res)=>{
 })
 
 
-app.listen(process.env.MONGODB,async()=>{
+app.listen(process.env.PORT,async()=>{
     try {
         await connection;
         console.log("Connected to mongoDb on port 8000");
